@@ -1,0 +1,27 @@
+default:
+  - 'serve'
+
+serve:
+  - 'express'
+  - 'watch'
+
+build:
+  - 'clean:build'
+  - 'pug:compile'
+  - 'css_watcher_tasks'
+  - 'js_watcher_tasks'
+  - 'copy_assets'
+  - 'concat:lib'
+
+copy_assets:
+  - 'copy'
+
+js_watcher_tasks:
+  - 'jshint:scripts'
+  - 'concat:app'
+  - 'copy:scripts'
+
+css_watcher_tasks:
+  - 'compass'
+  - 'autoprefixer'
+  - 'cssmin'

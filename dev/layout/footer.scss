@@ -1,0 +1,38 @@
+footer.footer
+{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-content: stretch;
+	align-items: flex-start;
+
+	height: 75px;
+	padding: 10px;
+
+	background-color: $blue-dark;
+
+	.footer-logo, .footer-copyright
+	{
+		order: 0;
+		flex: 1 1 auto;
+		align-self: center;
+	}
+
+	.footer-copyright
+	{
+		text-align: right;
+		color: $white;
+		font-size: 14px;
+	}
+
+	.footer-logo
+	{
+		height: 100%;
+		figure, figure img
+		{
+			height: 100%;
+			width: auto;
+		}
+	}
+}

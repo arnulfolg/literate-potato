@@ -1,0 +1,154 @@
+// Global Variables from Brown Advisory Style Guide
+
+//###############
+// COLORS
+//###############
+
+//Mains
+$brown-blue: 		rgb(57, 87, 117);		//Styles Guide Color (main)
+$brown-gray: 		rgb(103, 108, 115);		//Styles Guide Color (main)
+
+//Blues
+$blue-dark: 		rgb(27, 95, 170);		//Style Guide Color #01 -> 
+$blue-bright: 		rgb(0, 151, 219);		//Style Guide Color #07 -> 
+$blue-extra: 		rgb(86, 160, 211);		//Style Guide Color #13 -> 
+$blue-clear: 		rgb(174, 207, 230);		//Style Guide Color #19 -> 
+
+//Greens
+$green-bright: 		rgb(86, 148, 79);		//Style Guide Color #02 -> 
+$green-dark: 		rgb(0, 80, 47);			//Style Guide Color #08 -> 
+$green-extra: 		rgb(153, 194, 33);		//Style Guide Color #14 -> 
+$green-clear: 		rgb(150, 149, 56);		//Style Guide Color #20 -> 
+
+
+//Yellows
+$yellow-dark: 		rgb(255, 181, 17);		//Style Guide Color #03 -> 
+$yellow-bright: 	rgb(255, 229, 43);		//Style Guide Color #09 -> 
+$yellow-extra: 		rgb(220, 215, 210);		//Style Guide Color #15 -> 
+$yellow-clear: 		rgb(221, 228, 230);		//Style Guide Color #21 -> 
+
+//Blues
+$aqua-dark: 		rgb(27, 104, 117);		//Style Guide Color #04 -> 
+$aqua-bright: 		rgb(0, 141, 177);		//Style Guide Color #10 -> 
+$aqua-clear: 		rgb(173, 233, 233);		//Style Guide Color #16 -> 
+$aqua-extra: 		rgb(83, 202, 236);		//Style Guide Color #22 -> 
+
+//Violets
+$purple-dark: 		rgb(83, 21, 78);		//Style Guide Color #05 -> 
+$purple-bright: 	rgb(130, 36, 112);		//Style Guide Color #11 -> 
+$purple-extra: 		rgb(149, 110, 182);		//Style Guide Color #16 -> 
+$purple-clear: 		rgb(157, 154, 212);		//Style Guide Color #22 -> 
+
+//Reds
+$red-dark: 			rgb(179, 32, 37);		//Style Guide Color #06 -> 
+$red-bright: 		rgb(242, 101, 49);		//Style Guide Color #12 -> 
+$red-extra: 		rgb(255, 147, 81);		//Style Guide Color #18 -> 
+$red-clear: 		rgb(252, 184, 130);		//Style Guide Color #24 -> 
+
+//Generals
+$black: 			rgb(0,0,0);				//General Colors
+$white: 			rgb(255,255,255);		//General Colors
+$disabled-gray:     rgb(221, 221, 221);     //Disabled Elements
+$faded-gray:        rgb(249, 249, 249);
+
+//GRAY SHADES
+$gray-clearest:		rgb(250,250,250);		//GREY SHADE
+$gray-clearer:		rgb(248,248,248);		//GREY SHADE
+$gray-clear:		rgb(232,232,232);		//GREY SHADE
+$gray-medium:		rgb(192,192,192);		//GREY SHADE
+$gray-dark:			rgb(112,112,112);		//GREY SHADE
+
+//Text
+$text-base: rgb(51, 51, 51);
+$text-gray: rgb(132, 132, 132);
+$text-disabled: rgb(162, 162, 162);
+$text-light: rgb(255, 255, 255);
+
+
+$text-ok: $green-bright;
+$text-accent: $blue-bright;
+$text-blue: $blue-dark;
+$text-danger: $red-dark;
+$text-warning: $yellow-dark;
+$text-attention: $red-bright;
+$text-faded: rgb(204, 204, 204);
+$text-gray-dark: $gray-dark;
+$text-gray-clear: $gray-clear;
+
+
+
+//###############
+// FONTS
+//###############
+
+// Bentonsans
+@font-face {
+	font-family: "Bentonsans-Bold";
+	src: 	url("../assets/fonts/bentonSans-Bold.otf") format('opentype'),
+			url("../assets/fonts/bentonSans-Bold.ttf") format('truetype'),
+			url("../assets/fonts/bentonSans-Bold.woff2") format('woff2'),
+			url("../assets/fonts/bentonSans-Bold.woff") format('woff');
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "Bentonsans-Book";
+	src: 	url("../assets/fonts/bentonSans-Book.otf") format('opentype'),
+			url("../assets/fonts/bentonSans-Book.ttf") format('truetype'),
+			url("../assets/fonts/bentonSans-Book.woff2") format('woff2'),
+			url("../assets/fonts/bentonSans-Book.woff") format('woff');
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "Bentonsans-Medium";
+	src: 	url("../assets/fonts/bentonSans-Medium.otf") format('opentype'),
+			url("../assets/fonts/bentonSans-Medium.ttf") format('truetype'),
+			url("../assets/fonts/bentonSans-Medium.woff2") format('woff2'),
+			url("../assets/fonts/bentonSans-Medium.woff") format('woff');
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "Bentonsans-Regular";
+	src: 	url("../assets/fonts/bentonSans-Regular.otf") format('opentype'),
+			url("../assets/fonts/bentonSans-Regular.ttf") format('truetype'),
+			url("../assets/fonts/bentonSans-Regular.woff2") format('woff2'),
+			url("../assets/fonts/bentonSans-Regular.woff") format('woff');
+	font-style: normal;
+	font-weight: normal;
+}
+
+$font-headers:			"Bentonsans-Bold", Verdana, sans-serif;
+$font-subheaders:		"BentonSans-Medium", Verdana, sans-serif;
+
+$font-body:				"Bentonsans-Book", Verdana, sans-serif;
+$font-base-size: 15px;
+
+// $font-extra: Verdana, sans-serif;
+
+//###############
+// ELEVATION SHADOWS
+//###############
+$shadow-z-0: -1px 1px 0px rgba(0, 0, 0, 0.08), -1px 1px 1px rgba(0, 0, 0, 0.15);
+$shadow-z-1: -1px 2px 2px 0 rgba(0, 0, 0, .15), -1px 3px 1px -2px rgba(0, 0, 0, .20), 0 1px 5px 0 rgba(0, 0, 0, .12);
+$shadow-z-2: -1px 3px 6px rgba(0, 0, 0, 0.15), -1px 3px 6px rgba(0, 0, 0, 0.50);
+$shadow-z-2-from-left: 1px 3px 6px rgba(0, 0, 0, 0.15), 1px 3px 6px rgba(0, 0, 0, 0.50);
+$shadow-nested-row: 0 -8px 0 2px $faded-gray inset, 0 2px 2px 0 rgba(0, 0, 0, .15) inset, -0 3px 1px -2px rgba(0, 0, 0, .20) inset, 0 2px 4px 0 rgba(0, 0, 0, .12) inset;
+
+$shadow-inset-0: inset -1px 1px 0px rgba(0, 0, 0, 0.08), inset -1px 1px 1px rgba(0, 0, 0, 0.15);
+
+
+//###############
+// HELPERS
+//###############
+
+$containers-radious: 5px;
+
+//###############
+// Third Party Overrides
+//###############
+$spinkit-spinner-margin: 0;
+$spinkit-size: 64px;
+$spinkit-spinner-color: $gray-clear;
+

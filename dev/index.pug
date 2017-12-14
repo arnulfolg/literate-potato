@@ -1,0 +1,29 @@
+doctype html
+// This is a harmless comment
+html(lang="en")
+	head
+		//- base(href="/")
+		meta(http-equiv="X-UA-Compatible", content="IE=edge")
+		meta( name="viewport" content="width=device-width, initial-scale=1" )
+		meta(name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1")
+
+		title Angular 1.6 App
+
+		link(type="text/css" rel="stylesheet" href="/styles.css")
+
+body(ng-app="portal")
+	//- A block allows the child pages to include their own markup without breaking the template in chunks
+	// START - Page Content
+	app-shell
+	// END - Page Content
+
+	// LIBRARIES
+	//-////////////////
+	script(type="text/javascript", src="/app_libs.js")
+
+	// ANGULAR MODULES
+	//-////////////////
+	script(type="text/javascript", src="/app_scripts.js")
+
+
+
